@@ -26,5 +26,7 @@ class UserEditForm(forms.ModelForm):
         fields = ['first_name', 'last_name', 'email']
 
 class ProfileEditForm(forms.ModelForm):
-    model = profile
-    fields = ['date_of_birth', 'photo']
+    class Meta:
+
+        model = profile
+        fields = ['date_of_birth', 'photo']
